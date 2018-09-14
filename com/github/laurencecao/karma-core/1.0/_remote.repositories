@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Sep 14 13:22:00 CST 2018
+karma-core-1.0.jar>=
+karma-core-1.0.pom>=
+karma-core-1.0-sources.jar>=
