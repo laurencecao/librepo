@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.laurencecao</groupId>
   <artifactId>karma-cluster</artifactId>
   <version>1.0</version>
-  <inceptionYear>2016</inceptionYear>
-  <properties>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>com.github.laurencecao</groupId>
@@ -19,20 +12,20 @@
       <scope>compile</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jmxri</artifactId>
-          <groupId>com.sun.jmx</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>slf4j-log4j12</artifactId>
-          <groupId>org.slf4j</groupId>
+          <artifactId>jms</artifactId>
+          <groupId>javax.jms</groupId>
         </exclusion>
         <exclusion>
           <artifactId>jmxtools</artifactId>
           <groupId>com.sun.jdmk</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>jms</artifactId>
-          <groupId>javax.jms</groupId>
+          <artifactId>jmxri</artifactId>
+          <groupId>com.sun.jmx</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>slf4j-log4j12</artifactId>
+          <groupId>org.slf4j</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -43,6 +36,14 @@
       <scope>compile</scope>
       <exclusions>
         <exclusion>
+          <artifactId>jms</artifactId>
+          <groupId>javax.jms</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jmxtools</artifactId>
+          <groupId>com.sun.jdmk</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>jmxri</artifactId>
           <groupId>com.sun.jmx</groupId>
         </exclusion>
@@ -51,16 +52,8 @@
           <groupId>org.slf4j</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>jmxtools</artifactId>
-          <groupId>com.sun.jdmk</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>netty</artifactId>
           <groupId>io.netty</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jms</artifactId>
-          <groupId>javax.jms</groupId>
         </exclusion>
         <exclusion>
           <artifactId>log4j</artifactId>
@@ -75,29 +68,13 @@
       <scope>compile</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jmxri</artifactId>
-          <groupId>com.sun.jmx</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>slf4j-log4j12</artifactId>
-          <groupId>org.slf4j</groupId>
+          <artifactId>jms</artifactId>
+          <groupId>javax.jms</groupId>
         </exclusion>
         <exclusion>
           <artifactId>jmxtools</artifactId>
           <groupId>com.sun.jdmk</groupId>
         </exclusion>
-        <exclusion>
-          <artifactId>jms</artifactId>
-          <groupId>javax.jms</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-      <exclusions>
         <exclusion>
           <artifactId>jmxri</artifactId>
           <groupId>com.sun.jmx</groupId>
@@ -105,40 +82,40 @@
         <exclusion>
           <artifactId>slf4j-log4j12</artifactId>
           <groupId>org.slf4j</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jmxtools</artifactId>
-          <groupId>com.sun.jdmk</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jms</artifactId>
-          <groupId>javax.jms</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>1.1.7</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>jmxri</artifactId>
-          <groupId>com.sun.jmx</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>slf4j-log4j12</artifactId>
-          <groupId>org.slf4j</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jmxtools</artifactId>
-          <groupId>com.sun.jdmk</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jms</artifactId>
-          <groupId>javax.jms</groupId>
         </exclusion>
       </exclusions>
     </dependency>
   </dependencies>
+  <packaging>jar</packaging>
+  <name>PROJECT_NAME</name>
+  <description>PROJECT_DESCRIPTION</description>
+  <url>PROJECT_URL</url>
+  <scm>
+    <url>SCM_URL_FOR_PEOPLE</url>
+    <connection>SCM_URL_FOR_SCM</connection>
+  </scm>
+  <issueManagement>
+    <url>ISSUE_TRACKER_URL</url>
+    <system>ISSUE_TRACKER_NAME</system>
+  </issueManagement>
+  <licenses>
+    <license>
+      <name>LICENSE_NAME</name>
+      <url>LICENSE_URL</url>
+    </license>
+  </licenses>
+  <organization>
+    <name>ORG_NAME</name>
+    <url>ORG_URL</url>
+  </organization>
+  <developers>
+    <developer>
+      <id>DEV_HANDLE</id>
+      <name>DEV_NAME</name>
+      <email>DEV_MAIL</email>
+      <organization>ORG_NAME_AGAIN</organization>
+      <organizationUrl>ORG_URL_AGAIN</organizationUrl>
+      <timezone>UTC_OFFSET</timezone>
+    </developer>
+  </developers>
 </project>
