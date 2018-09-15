@@ -4,6 +4,7 @@
   <groupId>com.github.laurencecao</groupId>
   <artifactId>karma-core</artifactId>
   <version>1.0</version>
+  <packaging>pom</packaging>
   <dependencies>
     <dependency>
       <groupId>io.netty</groupId>
@@ -226,36 +227,26 @@
       </exclusions>
     </dependency>
   </dependencies>
-  <packaging>jar</packaging>
-  <name>PROJECT_NAME</name>
-  <description>PROJECT_DESCRIPTION</description>
-  <url>PROJECT_URL</url>
-  <scm>
-    <url>SCM_URL_FOR_PEOPLE</url>
-    <connection>SCM_URL_FOR_SCM</connection>
-  </scm>
-  <issueManagement>
-    <url>ISSUE_TRACKER_URL</url>
-    <system>ISSUE_TRACKER_NAME</system>
-  </issueManagement>
-  <licenses>
-    <license>
-      <name>LICENSE_NAME</name>
-      <url>LICENSE_URL</url>
-    </license>
-  </licenses>
+  <description>Java RPC Framework - Core</description>
+  <name>karma-core</name>
+  <url>https://github.com/laurencecao/karma</url>
   <organization>
-    <name>ORG_NAME</name>
-    <url>ORG_URL</url>
+    <name>com.github.laurencecao</name>
+    <url>https://github.com/laurencecao</url>
   </organization>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/laurencecao/karma/issues</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/laurencecao/karma</url>
+    <connection>scm:git:git://github.com/laurencecao/karma.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:laurencecao/karma.git</developerConnection>
+  </scm>
   <developers>
     <developer>
-      <id>DEV_HANDLE</id>
-      <name>DEV_NAME</name>
-      <email>DEV_MAIL</email>
-      <organization>ORG_NAME_AGAIN</organization>
-      <organizationUrl>ORG_URL_AGAIN</organizationUrl>
-      <timezone>UTC_OFFSET</timezone>
+      <name>Laurence Cao</name>
+      <email>laurence.cao@gmail.com</email>
     </developer>
   </developers>
 </project>
